@@ -1,13 +1,27 @@
 .header {
+  padding: 24px 32px;
 }
+.header-container {
+  display: flex;
+  align-items: center;
 
+  padding: 0 16px;
+}
 .main-nav {
+  margin-right: 122px;
+  margin-left: auto;
 }
 .main-nav-list {
+  display: flex;
+  gap: 24px;
+  margin-right: 122p;
+  margin-left: auo;
 }
 .main-nav-item {
 }
 .main-nav-link {
+  display: block;
+  padding: 11px 0;
   font-weight: 500;
 
   white-space: nowrap;

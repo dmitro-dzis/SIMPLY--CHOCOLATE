@@ -1,20 +1,40 @@
-.made{
-
+.made {
 }
-.made-title{
-
+.made-title {
+  width: 412px;
+  margin-bottom: 50px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
-.made-ill{
+.made-wrapper {
+  display: flex;
 
+  gap: 20px;
 }
-.made-caption{
-font-weight: 600;
-font-size: 18px;
-line-height: 1.33333;
+.made-left-side {
+  border-radius: 16px;
+  overflow: hidden;
 }
-.made-list{
 
+.made-ill {
 }
-.made-item{
-
+.made-right-side {
+  border-radius: 15px;
+  padding: 32px;
+  width: 516px;
+}
+.made-caption {
+  width: 350px;
+  margin-bottom: 28px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33333;
+}
+.made-list {
+}
+.made-item {
+}
+.made-item:not(:last-child) {
+  margin-bottom: 24px;
 }

@@ -8,6 +8,8 @@ body {
 }
 ol,
 ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 a {
@@ -21,20 +23,39 @@ address {
   font-style: normal;
 }
 /*base styl*/
-.section{
-
+.sr-only {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  margin: -1px;
 }
-.section-title{
-font-weight: 600;
-font-size: 24px;
-line-height: 1.16667;
-letter-spacing: -0.03em;
-text-align: center;
-text-transform: uppercase;
-
+.section {
+  padding: 60px 0;
 }
-.accent{
-color: #fd9222;
+.container {
+  max-width: 1168px;
+  padding: 0 16px;
+  margin: 0 auto;
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+.section-title {
+  margin: 0 auto 50px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.accent {
+  color: #fd9222;
 }
 
 .logo {
@@ -49,10 +70,20 @@ color: #fd9222;
 }
 /*SOCIALS*/
 .socials {
+  display: flex;
+  gap: 14px;
 }
 .socials-item {
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 10px;
+  padding: 8px;
+}
+.socials-item:hover,
+.socials-item:focus {
+  border: 1px solid rgba(253, 146, 34, 0.1);
 }
 .socials-link {
+  display: block;
 }
 .socials-icon {
 }
@@ -64,28 +95,41 @@ color: #fd9222;
   background-color: transparent;
 }
 .btn-filled {
+  border-radius: 100px;
+  padding: 14px 40px;
+  width: 144px;
+  height: 46px;
   background-color: #fd9222;
 
   color: #fff;
 }
 .btn-filled:focus,
-.btn-filled:hover{
+.btn-filled:hover {
   background: rgba(253, 146, 34, 0.1);
   color: #fd9222;
 }
 .btn-outlined {
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 14px 40px;
+
   color: #fff;
 }
 .btn-outlined:focus,
-.btn-outlined:hover{
+.btn-outlined:hover {
   color: #fd9222;
+  border: 1px solid #fd9222;
 }
 .primary {
 }
 .secondary {
+  display: block;
+  border: 1px solid #fd9222;
+  color: #111;
+  margin: 0 auto;
 }
 .secondary:focus,
-.secondary:hover{
+.secondary:hover {
   background-color: #fd9222;
   color: #fff;
 }

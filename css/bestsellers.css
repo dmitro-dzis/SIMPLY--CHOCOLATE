@@ -2,14 +2,29 @@
 }
 .bestsellers-title {
 }
-.bestsellers-item {
-  background-color: #fff;
-}
+
 .bestsellers-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  gap: 16px;
+}
+.bestsellers-item {
+  overflow: hidden;
+  background-color: #fff;
+  width: calc((100% - 16px * 2) / 3);
 }
 .bestsellers-ill {
+  border-radius: 16px 16px 0 0;
 }
 .bestsellers-caption {
+  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+  border-left: 1px solid rgba(17, 17, 17, 0.1);
+  border-right: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 0 0 15px 15px;
+  padding: 28px;
+  margin: 0;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33333;
